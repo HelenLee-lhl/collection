@@ -145,3 +145,8 @@ arrayList VS linkedlist 之随机删除
 arrayList 用时为：2835
 linkedlist 用时为：37509
 ```
+
+#### 比较
+    * 末尾新增，排出arrayList 数组扩容的时间节点，两者开销是确定的，arrayList 要比 linkedlist （需要维护上下node关系）快些。
+    * 开头新增，linkedlist 要比 arrayList（这是极端情况，主要消耗在元素移动上） 快些
+    * 随机新增或者删除，这种情况大部分情况都是arrayList 要比 linkedlist 快些，和我们想象的不同（数组需要元素移动而链表只需要重新把某个被删除的节点左右节点关联上即可） linkedlist 确定某个index 元素都要遍历半个链表开销很大。
