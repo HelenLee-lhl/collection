@@ -1,7 +1,7 @@
 # collection
 ## 数据结构-集合相关问题
 ### 1 ArrayList VS LinkedList
-``Java
+``` Java
 package com.helen.collectiondemo;
 
 import java.util.ArrayList;
@@ -144,4 +144,4 @@ linkedlist 之中间插入 用时为：78895
 arrayList VS linkedlist 之随机删除
 arrayList 用时为：2835
 linkedlist 用时为：37509
-``
+```
